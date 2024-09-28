@@ -46,6 +46,9 @@ img {
   height: 100vh;
   display: grid;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+
 }
 
 .login__bg {
@@ -168,6 +171,9 @@ img {
   text-decoration: underline;
 }
 
+.show-login {
+  opacity: 1;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
