@@ -23,62 +23,11 @@
          background-color: #f2f2f2;
       }
 
-      /* Welcome message styling */
-      .welcome-message {
-      font-size: 4rem; /* Slightly bigger welcome */
-      color: pink; /* Pink welcome message */
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: opacity 1s ease;
-      text-align: center;
-      font-weight: bold; /* Set the welcome message to bold */
-
-      }
-
-      .fade-in {
-         animation: fadeIn 3s forwards;
-      }
-
-      .fade-out {
-         animation: fadeOut 1s forwards;
-      }
-
-      @keyframes fadeIn {
-         0% {
-            opacity: 0;
-         }
-         100% {
-            opacity: 1;
-         }
-      }
-
-      @keyframes fadeOut {
-         0% {
-            opacity: 1;
-         }
-         100% {
-            opacity: 0;
-         }
-      }
-
-      /* Hide the login form initially */
-      .login {
-         opacity: 0;
-         transition: opacity 1s ease;
-      }
-
-      .show-login {
-         opacity: 1;
-      }
 
    </style>
 </head>
 <body>
    <!-- Welcome message -->
-   <div class="welcome-message">Welcome</div>
 
    <div class="login">
       <img src="assets/img/login-bg.png" alt="image" class="login__bg">
