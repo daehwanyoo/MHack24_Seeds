@@ -5,8 +5,9 @@
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --white-color: hsl(0, 0%, 100%);
+  --white-color: #834914;
   --black-color: hsl(0, 0%, 0%);
+  --really-white:#FFFFFF;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -62,9 +63,9 @@ img {
   background-color: hsla(0, 0%, 100%, .01);
   border: 2px solid hsla(0, 0%, 100%, .7);
   padding: 2.5rem 1rem;
-  color: var(--white-color);
+  color: #834914;
   border-radius: 1rem;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(2px);
 }
 
 .login__title {
@@ -92,11 +93,22 @@ img {
   border-radius: 4rem;
 }
 
-.login__input, 
-.login__button {
+.login__input{
   border: none;
   outline: none;
+} 
+.login__button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF; /* Set the button background to white directly */
+  border-radius: 4rem;
+  color: var(--white-color); /* Set the text color to black */
+  font-weight: 500;
+  cursor: pointer;
+  border-color: var(--white-color)
 }
+
 
 .login__input {
   width: 100%;
@@ -143,16 +155,6 @@ img {
   text-decoration: underline;
 }
 
-.login__button {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: var(--white-color);
-  border-radius: 4rem;
-  color: var(--black-color);
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .login__register {
   font-size: var(--small-font-size);
