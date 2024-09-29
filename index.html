@@ -88,12 +88,12 @@
 
          <div class="login__inputs">
             <div class="login__box">
-               <input type="email" placeholder="Email ID" required class="login__input">
+               <input type="email" placeholder="Email ID" required class="login__input" id="login-email">
                <i class="ri-mail-fill"></i>
             </div>
 
             <div class="login__box">
-               <input type="password" placeholder="Password" required class="login__input">
+               <input type="password" placeholder="Password" required class="login__input" id="login-password">
                <i class="ri-lock-2-fill"></i>
             </div>
          </div>
@@ -119,6 +119,8 @@
       // Get the welcome message and login form elements
       const welcomeMessage = document.querySelector('.welcome-message');
       const loginForm = document.querySelector('.login');
+      const loginEmail = document.querySelector('#login-email');
+      const loginPassword = document.querySelector('#login-password');
 
       // Add fade-in class to welcome message
       welcomeMessage.classList.add('fade-in');
@@ -133,6 +135,22 @@
       setTimeout(() => {
          loginForm.classList.add('show-login');
       }, 2000);
+            loginForm.addEventListener('submit', (e) => {
+         e.preventDefault();
+
+         // Retrieve stored user data from local storage
+         const storedEmail = localStorage.getItem('email');
+         const storedPassword = localStorage.getItem('password');
+
+         // Check if login credentials match stored data
+         if (loginEmail.value === storedEmail && loginPassword.value === storedPassword) {
+            // Redirect to indoor.html on successful login
+            window.location.href = 'indoor.html';
+         } else {
+            alert('Incorrect email or password');
+         }
+      });
+
    </script>
 </body>
 </html>
