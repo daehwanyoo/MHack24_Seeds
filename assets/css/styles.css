@@ -61,9 +61,10 @@ img {
   position: relative;
   margin-inline: 1.5rem;
   background-color: hsla(0, 0%, 100%, .01);
-  border: 2px solid hsla(0, 0%, 100%, .7);
+  border: 2px solid #834914;
   padding: 2.5rem 1rem;
   color: #834914;
+
   border-radius: 1rem;
   backdrop-filter: blur(2px);
 }
@@ -74,7 +75,7 @@ img {
   margin-bottom: 1.25rem;
 }
 
-.login__inputs, 
+.login__inputs,
 .login__box {
   display: grid;
 }
@@ -88,7 +89,7 @@ img {
   grid-template-columns: 1fr max-content;
   column-gap: .75rem;
   align-items: center;
-  border: 2px solid hsla(0, 0%, 100%, .7);
+  border: 2px solid #834914;
   padding-inline: 1.25rem;
   border-radius: 4rem;
 }
@@ -106,7 +107,7 @@ img {
   color: var(--white-color); /* Set the text color to black */
   font-weight: 500;
   cursor: pointer;
-  border-color: var(--white-color)
+  border-color: var(--white-color);
 }
 
 
@@ -125,7 +126,7 @@ img {
   font-size: 1.25rem;
 }
 
-.login__check, 
+.login__check,
 .login__check-box {
   display: flex;
   justify-content: space-between;
@@ -168,6 +169,23 @@ img {
 
 .login__register a:hover {
   text-decoration: underline;
+}
+
+/*================ OUTDOOR ==================*/
+.plus-button {
+  background-color: gray;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+.show-login {
+  opacity: 1;
 }
 
 /*=============== BREAKPOINTS ===============*/
