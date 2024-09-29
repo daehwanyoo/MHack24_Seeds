@@ -106,7 +106,7 @@ img {
   color: var(--white-color); /* Set the text color to black */
   font-weight: 500;
   cursor: pointer;
-  border-color: var(--white-color)
+  border-color: var(--white-color);
 }
 
 

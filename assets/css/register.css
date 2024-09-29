@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --white-color: hsl(0, 0%, 100%);
+  --white-color: #834914;
   --black-color: hsl(0, 0%, 0%);
 
   /*========== Font and typography ==========*/
@@ -62,7 +62,7 @@ img {
   padding: 2.5rem 1rem;
   color: var(--white-color);
   border-radius: 1rem;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(4px);
 }
 
 .register__title {
@@ -115,11 +115,12 @@ img {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--white-color);
+  background-color: #FFFFFF;
   border-radius: 4rem;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 500;
   cursor: pointer;
+  border: 2px solid var(--white-color); /* Added border with width */
 }
 
 .register__login {
