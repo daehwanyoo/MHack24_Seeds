@@ -4,13 +4,10 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --white-color: #834914;
+  --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 0%);
-  --really-white:#FFFFFF;
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --h1-font-size: 2rem;
   --normal-font-size: 1rem;
@@ -41,15 +38,15 @@ img {
   height: auto;
 }
 
-/*=============== LOGIN ===============*/
-.login {
+/*=============== REGISTER ===============*/
+.register {
   position: relative;
   height: 100vh;
   display: grid;
   align-items: center;
 }
 
-.login__bg {
+.register__bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -57,34 +54,34 @@ img {
   object-position: center;
 }
 
-.login__form {
+.register__form {
   position: relative;
   margin-inline: 1.5rem;
   background-color: hsla(0, 0%, 100%, .01);
   border: 2px solid hsla(0, 0%, 100%, .7);
   padding: 2.5rem 1rem;
-  color: #834914;
+  color: var(--white-color);
   border-radius: 1rem;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(16px);
 }
 
-.login__title {
+.register__title {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 1.25rem;
 }
 
-.login__inputs,
-.login__box {
+.register__inputs, 
+.register__box {
   display: grid;
 }
 
-.login__inputs {
+.register__inputs {
   row-gap: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.login__box {
+.register__box {
   grid-template-columns: 1fr max-content;
   column-gap: .75rem;
   align-items: center;
@@ -93,111 +90,63 @@ img {
   border-radius: 4rem;
 }
 
-.login__input{
+.register__input, 
+.register__button {
   border: none;
   outline: none;
-} 
-.login__button {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #FFFFFF; /* Set the button background to white directly */
-  border-radius: 4rem;
-  color: var(--white-color); /* Set the text color to black */
-  font-weight: 500;
-  cursor: pointer;
-  border-color: var(--white-color)
 }
 
-
-.login__input {
+.register__input {
   width: 100%;
   background: none;
   color: var(--white-color);
   padding-block: 1rem;
 }
 
-.login__input::placeholder {
+.register__input::placeholder {
   color: var(--white-color);
 }
 
-.login__box i {
+.register__box i {
   font-size: 1.25rem;
 }
 
-.login__check,
-.login__check-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.login__check {
+.register__button {
+  width: 100%;
+  padding: 1rem;
   margin-bottom: 1rem;
-  font-size: var(--small-font-size);
+  background-color: var(--white-color);
+  border-radius: 4rem;
+  color: var(--black-color);
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.login__check-box {
-  column-gap: .5rem;
-}
-
-.login__check-input {
-  width: 1rem;
-  height: 1rem;
-  accent-color: var(--white-color);
-}
-
-.login__forgot {
-  color: var(--white-color);
-}
-
-.login__forgot:hover {
-  text-decoration: underline;
-}
-
-
-.login__register {
+.register__login {
   font-size: var(--small-font-size);
   text-align: center;
 }
 
-.login__register a {
+.register__login a {
   color: var(--white-color);
   font-weight: 500;
 }
 
-.login__register a:hover {
+.register__login a:hover {
   text-decoration: underline;
-}
-
-/*================ OUTDOOR ==================*/
-.plus-button {
-  background-color: gray;
-  border: none;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-
-.show-login {
-  opacity: 1;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .login {
+  .register {
     justify-content: center;
   }
-  .login__form {
+  .register__form {
     width: 420px;
     padding-inline: 2.5rem;
   }
-  .login__title {
+  .register__title {
     margin-bottom: 2rem;
   }
 }
