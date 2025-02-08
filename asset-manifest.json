@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/kasgaa_temp/static/css/main.08104295.css",
+    "main.js": "/kasgaa_temp/static/js/main.9ee02f37.js",
+    "static/media/landing.png": "/kasgaa_temp/static/media/landing.b6c53f145d9693e3207e.png",
+    "static/media/about.png": "/kasgaa_temp/static/media/about.fd2bd82304b4475c3a86.png",
+    "static/media/logo-white.png": "/kasgaa_temp/static/media/logo-white.69c2e55aa3afd2ea2ffe.png",
+    "static/media/logo.png": "/kasgaa_temp/static/media/logo.7d55c43e0f9ac0e113fd.png",
+    "index.html": "/kasgaa_temp/index.html",
+    "main.08104295.css.map": "/kasgaa_temp/static/css/main.08104295.css.map",
+    "main.9ee02f37.js.map": "/kasgaa_temp/static/js/main.9ee02f37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08104295.css",
+    "static/js/main.9ee02f37.js"
+  ]
+}
